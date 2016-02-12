@@ -1,0 +1,9 @@
+language: go
+go:
+  - 1.5.1
+install:
+  - make deps
+script:
+  - make install-all
+  - make test
+  - make cover
